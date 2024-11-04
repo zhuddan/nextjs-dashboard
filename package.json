@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev --turbo",
+    "dev": "next dev --hostname jj.server.com --port 80",
     "start": "next start",
     "lint": "next lint"
   },
