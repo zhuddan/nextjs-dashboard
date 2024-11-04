@@ -73,10 +73,6 @@ export default function Page() {
     }
     setNickname(nickname)
     setHeadimgurl(headimgurl)
-    console.log(
-      headimgurl,
-      nickname
-    )
   }
   return <div>
     <Button onClick={onAuth}>auth</Button>
