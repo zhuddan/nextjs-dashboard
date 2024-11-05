@@ -12,15 +12,11 @@ export const authConfig: NextAuthConfig = {
         if (isLoggedIn) return true;
         return false; // Redirect unauthenticated users to login page
       } else if (isLoggedIn) {
-        // return Response.redirect(new URL('/dashboard', nextUrl));
-        return Response.redirect(new URL('/', nextUrl));
+        return Response.redirect(new URL('/dashboard', nextUrl));
+        // return Response.redirect(new URL('/', nextUrl));
       }
       return true;
     },
-    // redirect({ url, baseUrl }) {
-    //   // 替换 localhost 为实际 IP
-    //   return url.replace('localhost', '172.16.5.205')
-    // }
   },
   providers: [], // Add providers with an empty array for now
 } satisfies NextAuthConfig;
